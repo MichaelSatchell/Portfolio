@@ -1,12 +1,13 @@
 
 * {
     margin: 0;
-    
 }
-h1{
-    color: red;
+.background {
+    color: gray;
 }
 
 .test{
-    color: blue;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: red;
 }
