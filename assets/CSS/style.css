@@ -14,11 +14,11 @@
 
 /* Card container for protfolio projects */
 
-.container{
+.project-container{
     perspective: 800px;
 }
 
-.card{
+.project-card{
     width: 300px;
     height: 350px;
     object-fit: cover;
