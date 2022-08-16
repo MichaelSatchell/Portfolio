@@ -1,40 +1,167 @@
-
 * {
     margin: 0;
-}
-.background {
-    color: gray;
+    padding: 0;
+    /*background-color: #1d1e22; */
+    color: #141414;
+    color: #7ba92c;
+
+
+
 }
 
-.test{
-    color: orange;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: red;
+body {
+    background-color: rgb(75, 21, 21);
+}
+
+/* mario bullet and bullet animation */
+.mario-bullet {
+    width: 2em;
+
+}
+
+.mario-bullet {
+    transition: transform 1s;
+    animation-name: intro-anime;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    width: 2em;
+
+}
+
+.intro-animation img:nth-child(2) {
+    width: 10em;
+
+}
+
+.intro-animation img:nth-child(3) {
+    width: 10em;
+}
+
+.intro-animation img:nth-child(4) {
+    animation-name: intro-anime;
+    transition: transform 1s;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    width: 10em;
+}
+
+
+@keyframes intro-anime {
+    from {
+        margin-left: 100%;
+
+    }
+
+    to {
+        margin-right: 100%;
+
+    }
+    
+
+    /*
+    0% {float: right}
+    50% {float: center}
+    100% {float: left} */
+}
+
+/* project block section */
+
+.project-block {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    background-color: green;
+}
+
+/* self photo section */
+
+.self {
+    width: 40vw;
+    height: 40vh;
+    background-color: #7ba92c;
+    border: red 2px solid;
+    position: relative;
+    left: 40vw;
+    
+}
+
+.me-top {
+    width: 40em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 38%;
+    margin: 0;
+
+}
+
+.me-bottom {
+    width: 124em;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 17%;
+    margin: 0;
+    bottom: -54%;
+    bottom: -60%;
+}
+
+.cloud {
+    width: 40em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    left: 38.2%;
+    bottom: 29%
+}
+
+.top-shadow{
+    width: 39.5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    left: 38.2%;
+    bottom: 2%;
+}
+
+.bottom-shadow {
+    width: 44.5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    left: 36.6%;
+    bottom: 34%;
 }
 
 /* Card container for protfolio projects */
 
-.project-container{
+.project-container {
     perspective: 800px;
-    width: 80px;
-    height: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
 }
 
-.project-card{
-    width: 300px;
-    height: 350px;
+.project-card {
+    width: 10em;
+    height: 10em;
     object-fit: cover;
     transform-style: preserve-3d;
     position: relative;
-    transition: transform 1.5s
-    cubic-bezier(0.4, 0.03, 0.5, 0.9);
+    transition: transform 1.5s cubic-bezier(0.4, 0.03, 0.5, 0.9);
     border: 4px solid black;
     left: 100px;
     top: 100px;
-    
+
+
 }
 
-.card-image{
+.card-image {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -48,8 +175,8 @@
 
 .card-image:nth-child(2),
 
-.project-card:hover{
-    transform: rotate3d(0,1,0, 180deg);
+.project-card:hover {
+    transform: rotate3d(0, 1, 0, 180deg);
 }
 
-/* end of card container */ 
+/* end of card container */

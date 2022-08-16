@@ -1,94 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
 
-    <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+
+  <title>Document</title>
 </head>
 
 
-<body class="background">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<h1 class="test"> TEst number two</h1>
+  <h1> TEst number two</h1>
 
-    <header> Welcome 
-        <h1><a href=""> Resume </h1></a>
-        <img src="" alt="beatiful picture of me"> 
-    </header>
+  <header> Welcome
+    <h1><a href=""> Resume </h1></a>
+    <img src="" alt="beatiful picture of me">
+  </header>
 
-    <article><h2> About Me</h2>
-        <p> This I am </p>
-    </article>
+<!--container for hero animation-->
+<section class="intro-animation">
+  <img class="mario-bullet" src="./assets/Images/Mario bullet.svg">
+  <img src="./assets/Images/ufo.svg" alt="ufo image">
+  <img src="./assets/Images/beam.svg" alt="ufo tracker beam">
+  <img src="./assets/Images/Plane.svg" alt="old prop plane">
 
-    <section>
-        <h2> My Projects</h2>
-        
-        <!-- section for portfolio projects and card container-->
-        <section class="project-container">
-            <article class="project-card">
-                <img src="juneteenth-flag-300x300.jpg" alt class="card-image" alt="project 1 card">
-                <img src="Juneteenth(2).jpg" alt class="card-image" alt="project 2 card">
-                <img src="juneteenth-flag-300x300.jpg" alt class="card-image" alt="project 3 card">
-                <img src="Juneteenth(2).jpg" alt class="card-image" alt="project 4 card">
-            </article>
-        </section>
+  <h3> test file</h3>
+</section>
 
+<!--self portrait container-->
+<section class="self">
+  <img class="me-top" src="./assets/Images/top.svg" alt="photo of the top portion of my head">
+  <img class="me-bottom" src="./assets/Images/me-bottom.svg" alt="bottom photo of myself">
+  <img class="top-shadow" src="./assets/Images/top-shadow.svg" alt="inner shawdow element photo for head photo">
+  <img class="cloud" src="./assets/Images/cloud.svg" alt="vector image of a mushroom cloud">
+  <img class="bottom-shadow" src="./assets/Images/lower-shadow.svg" alt="inner shadow element photo for bottom photo">
+
+</section>
+
+  <article>
+    <h2> About Me</h2>
+    <p> This I am </p>
+  </article>
+
+  <section class="project-block">
+    <h2> My Projects</h2>
+
+    <!-- section for portfolio projects and card container-->
+    <section class="project-container">
+      <article class="project-card">
+        <img src="./assets/Images/Naruto Peace Sign.jpg" alt class="card-image">
+        <img src="./assets/Images/naruto young.jpg" alt class="card-image">
+        <img src="./assets/Images/Naruto Peace Sign.jpg" alt class="card-image" alt="project 3 card">
+        <img src="./assets/Images/naruto young.jpg" alt class="card-image" alt="project 4 card">
+      </article>
+    </section>
+  </section>
+
+
+  <!--old project images. I replaced them with the card container
         <img src="" alt="project 1 thumbnail"> 
         <img src="" alt="project 2 thumbnail"> 
         <img src="" alt="project 3 thumbnail"> 
         <img src="" alt="project 4 thumbnail"> 
-    </section>  
-    
-    <footer>
 
-        <div class="card">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+          -->
 
 
-    </footer>
+  <footer>
+
+    <div class="card">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+
+  </footer>
 
 
 
 </body>
+
 </html>
