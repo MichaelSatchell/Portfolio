@@ -46,7 +46,7 @@
 
 .card-image:nth-child(2),
 
-.card:hover{
+.project-card:hover{
     transform: rotate3d(0,1,0, 180deg);
 }
 
