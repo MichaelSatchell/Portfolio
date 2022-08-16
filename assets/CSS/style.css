@@ -12,6 +12,7 @@
     background-color: red;
 }
 
+/* Card container for protfolio projects */
 
 .container{
     perspective: 800px;
@@ -48,3 +49,5 @@
 .card:hover{
     transform: rotate3d(0,1,0, 180deg);
 }
+
+/* end of card container */ 
