@@ -16,6 +16,8 @@
 
 .project-container{
     perspective: 800px;
+    width: 80px;
+    height: 80px;
 }
 
 .project-card{
