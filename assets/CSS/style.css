@@ -1,19 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    /*background-color: #1d1e22; */
+    background-color: #1d1e22; 
     color: #141414;
     color: #7ba92c;
-
-
+    
 
 }
 
-body {
-    background-color: rgb(75, 21, 21);
+html {
+    font-size: 16px;
 }
 
 /* mario bullet and bullet animation */
+
+.intro-animation {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    border: 2px black solid;
+    z-index: -1;
+
+}
+
 .mario-bullet {
     width: 2em;
 
@@ -64,76 +74,98 @@ body {
     100% {float: left} */
 }
 
-/* project block section */
-
-.project-block {
-    display: flex;
-    width: 100vw;
-    height: 40vh;
-    background-color: green;
-}
 
 /* self photo section */
 
-.self {
-    width: 40vw;
+
+.profile-pic {
+    background-color: red;
+    max-width: 100vw;
     height: 40vh;
+    max-height: auto;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+
+}
+
+.self {
+    max-width: 30%;
+    height: auto;
     background-color: #7ba92c;
-    border: red 2px solid;
+    border: black 2px solid;
     position: relative;
-    left: 40vw;
-    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+   
+      
 }
 
 .me-top {
-    width: 40em;
+    max-width: 100%;
+    height: auto;
+    
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
-    left: 38%;
-    margin: 0;
+    z-index: 5;
+    background-color: transparent;
+    overflow: hidden;
 
 }
 
 .me-bottom {
-    width: 124em;
-    position: absolute;
-    display: flex;
+    max-width: 100%;
+    height: auto;
+    
+    position: relative;
+    display: block;
     justify-content: center;
-    left: 17%;
-    margin: 0;
-    bottom: -54%;
-    bottom: -60%;
+    background-color: transparent;
+    z-index: 3;
+    overflow: hidden;
 }
 
 .cloud {
-    width: 40em;
+    max-width: 100%;
+    
+    
+    height: auto;
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
-    margin: 0;
-    left: 38.2%;
-    bottom: 29%
+    z-index: 2;
+    background-color: transparent;
+    z-index: 5;
+    overflow: hidden;
+    
+    
 }
 
 .top-shadow{
-    width: 39.5em;
+    max-width: 100%;
+    
+    height: auto;
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
-    margin: 0;
-    left: 38.2%;
-    bottom: 2%;
+    background-color: transparent;
+    z-index: 6;
+    overflow: hidden;
 }
 
 .bottom-shadow {
-    width: 44.5em;
+    max-width: 100%;
+    height: auto;
+    
     position: relative;
-    display: flex;
+    display: block;
     justify-content: center;
-    margin: 0;
-    left: 36.6%;
-    bottom: 34%;
+    background-color: transparent;
+    z-index: 4;
+    overflow: hidden;
 }
 
 /* Card container for protfolio projects */
@@ -178,5 +210,16 @@ body {
 .project-card:hover {
     transform: rotate3d(0, 1, 0, 180deg);
 }
+
+
+/* project block section */
+
+.project-block {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    background-color: green;
+}
+
 
 /* end of card container */
