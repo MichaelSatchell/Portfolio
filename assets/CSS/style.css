@@ -12,30 +12,83 @@ html {
     font-size: 16px;
 }
 
-/* mario bullet and bullet animation */
+
+/* nav-bar */
+
+nav {
+    overflow: hidden;
+}
+
+
+.logo {
+    display: inline;
+    z-index: 2;
+}
+
+ul {
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    max-width: 100%;
+    height: auto;
+    background-color: #7ba92c;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline;
+    border: .2em solid pink;
+    padding: 1em;
+    margin: 2em;
+    text-align: center;
+    max-width: 10em;
+    height: auto;
+    background-color: orange;
+    
+}
+
+
+li:hover {
+    background-color: purple;
+    border-color: plum;
+}
+
+/*-------mario bullet and plane animation--------*/
 
 .intro-animation {
-    display: flex;
-    justify-content: center;
+    display: inline;
     max-width: 100%;
     height: auto;
     border: 2px black solid;
+    
+    overflow: hidden;
+
+}
+
+.mario-bullet {
+    width: 2em;
+    overflow: hidden;
     z-index: -1;
 
 }
 
 .mario-bullet {
-    width: 2em;
-
-}
-
-.mario-bullet {
     transition: transform 1s;
-    animation-name: intro-anime;
+    animation-name: mario-bullet-animation;
     animation-duration: 20s;
     animation-delay: 1s;
     width: 2em;
 
+}
+.mario-bullet-animation {
+    animation-name: mario-bullet-animation;
+    transition: transform 1s;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    width: 10em;
 }
 
 .intro-animation img:nth-child(2) {
@@ -73,18 +126,40 @@ html {
     50% {float: center}
     100% {float: left} */
 }
+/*forehead  animation */
+.forehead {
+    animation-name: forehead-animation;
+    transition: transform 1s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    max-width: 200%;
+    
+}
+
+@keyframes forehead-animation {
+    from {
+        top: 36.9%;
+    }
+
+    to {
+        top: 10%;
+    }
+}
 
 
-/* self photo section */
 
 
+/*------ self photo section------- */
 .profile-pic {
     background-color: red;
     max-width: 100vw;
-    height: 40vh;
+    height: 70vh;
     max-height: auto;
     overflow: hidden;
     justify-content: center;
+    
     display: flex;
     z-index: 1;
 
@@ -92,83 +167,161 @@ html {
 
 .self {
     max-width: 30%;
-    height: auto;
+    max-height: auto;
     background-color: #7ba92c;
     border: black 2px solid;
     position: relative;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-   
-      
+    left: 20%;
+                
 }
+/*forehead picture and shadow animation */
 
-.me-top {
-    max-width: 100%;
+.forehead {
+    max-width: 200%;
+    min-width: 100%;
     height: auto;
-    
     position: relative;
     display: block;
-    justify-content: center;
+    left: 300%;  
+    top: 36.9%;
     z-index: 5;
     background-color: transparent;
-    overflow: hidden;
 
 }
 
-.me-bottom {
-    max-width: 100%;
+.forehead-shadow {
+    animation-name: forehead-shadow-animation;
+    transition: transform 1s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    max-width: 200%;
+    visibility: hidden;
+}
+
+@keyframes forehead-shadow-animation {
+    from {
+        top: 46%;
+        opacity: 0;
+    }
+
+    to {
+        top: 20%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/*main head */
+.main-head {
+    max-width: 200%;
+    min-width: 100%;
     height: auto;
-    
     position: relative;
     display: block;
-    justify-content: center;
     background-color: transparent;
-    z-index: 3;
+    left: 12%;
+    top: 30%;
+    z-index: 1;
     overflow: hidden;
 }
 
+
+/*cloud picture and animation */
 .cloud {
-    max-width: 100%;
-    
-    
+    max-width: 200%;
+    min-width: 100%;
     height: auto;
     position: relative;
     display: block;
-    justify-content: center;
     z-index: 2;
     background-color: transparent;
     z-index: 5;
     overflow: hidden;
-    
+    right: 200%;
+    top: 32.3%;
     
 }
 
-.top-shadow{
-    max-width: 100%;
-    
+.cloud {
+    animation-name: cloud-animation;
+    transition: transform 1s;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    max-width: 200%;
+    visibility: hidden;
+}
+
+@keyframes cloud-animation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.forehead-shadow{
+    max-width: 200%;
+    min-width: 100%;
     height: auto;
     position: relative;
     display: block;
-    justify-content: center;
     background-color: transparent;
     z-index: 6;
     overflow: hidden;
+    right: 110%;
+    top: 46%;
 }
 
-.bottom-shadow {
-    max-width: 100%;
+.main-head-shadow {
+    max-width: 200%;
     height: auto;
-    
+    min-width: 100%;
     position: relative;
     display: block;
-    justify-content: center;
     background-color: transparent;
-    z-index: 4;
+    z-index: 3;
     overflow: hidden;
+    right: 290.4%;
+    top: 45%;
 }
 
-/* Card container for protfolio projects */
+.main-head-shadow {
+    animation-name: main-head-animation;
+    transition: transform 1s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    visibility: hidden;
+    max-width: 200%;
+    height: auto;
+    min-width: 100%;
+    
+}
+
+@keyframes main-head-animation {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/*-------Card container for protfolio projects--------*/
 
 .project-container {
     perspective: 800px;
