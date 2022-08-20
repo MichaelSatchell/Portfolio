@@ -163,7 +163,7 @@ li:hover {
     
 @keyframes animation-plane {
     from {right: 200%;}
-    to {left: -100%; }
+    to {left: -20%; }
 
     0% {
         float: left;
@@ -180,8 +180,8 @@ li:hover {
 
     100% {
         float: right;
-        visibility: hidden;
-        opacity: 0;
+        visibility: visible;
+        opacity: 1;
         
     }
     
@@ -239,7 +239,7 @@ li:hover {
 
 @keyframes forehead-animation {
     from {
-        top: 17.5%;
+        top: 17.1%;
     }
 
     to {
@@ -254,8 +254,8 @@ li:hover {
     height: auto;
     position: relative;
     display: block;
-    left: 325.9%;  
-    top: 17.5%;
+    left: 325.1%;  
+    top: 17.1%;
     z-index: 5;
     background-color: transparent;
    
@@ -275,12 +275,12 @@ li:hover {
 
 @keyframes forehead-shadow-animation {
     from {
-        top: 25.9%;
+        top: 25.2%;
         opacity: 0;
     }
 
     to {
-        top: 10.3%;
+        top: 9.9%;
         visibility: visible;
         opacity: 1;
     }
@@ -369,7 +369,7 @@ li:hover {
     z-index: 13;
     overflow: hidden;
     right: -15.6%;
-    top: 24%;
+    top: 23.9%;
     
 }
 
