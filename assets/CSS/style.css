@@ -5,7 +5,6 @@
     color: #141414;
     color: #7ba92c;
     
-
 }
 
 html {
@@ -13,7 +12,10 @@ html {
 }
 
 
+
 /* nav-bar */
+
+
 
 nav {
     overflow: hidden;
@@ -38,11 +40,15 @@ ul {
     
 }
 
+nav li {
+    font-size: 1rem;
+}
+
 li {
     display: inline;
     border: .2em solid pink;
-    padding: 1em;
-    margin: 2em;
+    padding: 1rem;
+    margin: 2rem;
     text-align: center;
     max-width: 10em;
     height: auto;
@@ -56,57 +62,82 @@ li:hover {
     border-color: plum;
 }
 
+.image-container {
+    max-width: 100%;
+    height: auto;
+    background-color: orange;
+    border: 2px wheat solid;
+    overflow: hidden;
+}
+
 /*-------mario bullet and plane animation--------*/
 
 .intro-animation {
-    display: inline;
+    display: block;
     max-width: 100%;
     height: auto;
     border: 2px black solid;
-    
     overflow: hidden;
+    position: relative;
 
 }
 
 .mario-bullet {
     width: 2em;
     overflow: hidden;
-    z-index: -1;
-
+    z-index: 1;
+    left: 100%;
+    background-color: aqua;
+    transform: rotate(.75turn);
+    position: relative;
+    display: block;
+    left: 60%;
+    top: 150%;
+    margin:0%;
+    padding: 0%;
+    
 }
 
 .mario-bullet {
     transition: transform 1s;
     animation-name: mario-bullet-animation;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-delay: 1s;
     width: 2em;
+    
+   /* visibility: hidden; */
 
 }
-.mario-bullet-animation {
-    animation-name: mario-bullet-animation;
-    transition: transform 1s;
-    animation-duration: 20s;
-    animation-delay: 3s;
-    width: 10em;
-}
+/*
+@keyframes mario-bullet-animation {
+    from {
+        left: 60%;
+        opacity: 0; 
 
-.intro-animation img:nth-child(2) {
-    width: 10em;
+   }
 
-}
+    to {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+ 
+    }
+    
 
-.intro-animation img:nth-child(3) {
-    width: 10em;
-}
 
-.intro-animation img:nth-child(4) {
-    animation-name: intro-anime;
-    transition: transform 1s;
-    animation-duration: 20s;
-    animation-delay: 3s;
-    width: 10em;
-}
+} */
+     /*
+    0% {float: right}
+    50% {float: center}
+    100% {float: left} */
+
+.airplane {
+        width: 10em;
+        z-index: 2;
+        background-color: purple;
+    
+    }
+
 
 
 @keyframes intro-anime {
@@ -126,27 +157,7 @@ li:hover {
     50% {float: center}
     100% {float: left} */
 }
-/*forehead  animation */
-.forehead {
-    animation-name: forehead-animation;
-    transition: transform 1s;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    position: relative;
-    max-width: 200%;
-    
-}
 
-@keyframes forehead-animation {
-    from {
-        top: 36.9%;
-    }
-
-    to {
-        top: 10%;
-    }
-}
 
 
 
@@ -159,7 +170,6 @@ li:hover {
     max-height: auto;
     overflow: hidden;
     justify-content: center;
-    
     display: flex;
     z-index: 1;
 
@@ -176,11 +186,37 @@ li:hover {
     left: 20%;
                 
 }
+
+
+
+/*forehead  animation */
+.forehead {
+    animation-name: forehead-animation;
+    transition: transform 1s;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    max-width: 200%;
+    height: auto;
+    
+}
+
+@keyframes forehead-animation {
+    from {
+        top: 36.9%;
+    }
+
+    to {
+        top: 10%;
+    }
+}
+
 /*forehead picture and shadow animation */
 
 .forehead {
-    max-width: 200%;
-    min-width: 100%;
+    max-width: 40%;
+    min-width: 40%;
     height: auto;
     position: relative;
     display: block;
@@ -198,7 +234,8 @@ li:hover {
     animation-delay: 2s;
     animation-fill-mode: forwards;
     position: relative;
-    max-width: 200%;
+    max-width: 40%;
+    height: auto;
     visibility: hidden;
 }
 
@@ -217,8 +254,8 @@ li:hover {
 
 /*main head */
 .main-head {
-    max-width: 200%;
-    min-width: 100%;
+    max-width: 40%;
+    min-width: 40%;
     height: auto;
     position: relative;
     display: block;
@@ -232,8 +269,8 @@ li:hover {
 
 /*cloud picture and animation */
 .cloud {
-    max-width: 200%;
-    min-width: 100%;
+    max-width: 40%;
+    min-width: 40%;
     height: auto;
     position: relative;
     display: block;
@@ -241,7 +278,7 @@ li:hover {
     background-color: transparent;
     z-index: 5;
     overflow: hidden;
-    right: 200%;
+    left: 20%;
     top: 32.3%;
     
 }
@@ -253,7 +290,7 @@ li:hover {
     animation-delay: 3s;
     animation-fill-mode: forwards;
     position: relative;
-    max-width: 200%;
+    max-width: 40%;
     visibility: hidden;
 }
 
@@ -270,28 +307,28 @@ li:hover {
 
 
 .forehead-shadow{
-    max-width: 200%;
-    min-width: 100%;
+    max-width: 40%;
+    min-width: 40%;
     height: auto;
     position: relative;
     display: block;
     background-color: transparent;
     z-index: 6;
     overflow: hidden;
-    right: 110%;
+    right: 10%;
     top: 46%;
 }
 
 .main-head-shadow {
-    max-width: 200%;
+    max-width: 40%;
     height: auto;
-    min-width: 100%;
+    min-width: 40%;
     position: relative;
     display: block;
     background-color: transparent;
     z-index: 3;
     overflow: hidden;
-    right: 290.4%;
+    right: 10%;
     top: 45%;
 }
 
@@ -303,9 +340,9 @@ li:hover {
     animation-fill-mode: forwards;
     position: relative;
     visibility: hidden;
-    max-width: 200%;
+    max-width: 40%;
     height: auto;
-    min-width: 100%;
+    min-width: 40%;
     
 }
 
