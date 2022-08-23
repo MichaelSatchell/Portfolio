@@ -9,12 +9,13 @@
 
 html {
     font-size: 16px;
-    overflow-x: hidden;
+    
 }
 
 body {
    /* background-image: radial-gradient(black, red, green); */
    background-color: #1d1e22; 
+ 
    
 }
     
@@ -26,14 +27,14 @@ h1 {
     background-color: #fff;
     max-width: 100%;
     min-width: 100%;
-    margin: 0 2rem 0 2rem;
-    padding: 0 2rem 0 2rem;
+    
     display: block;
     position: absolute;
 }
 
 .hidden {
     visibility: hidden;
+    width: 100%;
     
 }
 /* nav-bar */
@@ -44,24 +45,30 @@ a {
 }
 
 nav {
-    
+    display: flex;
+    justify-content: flex-end;
+    background-color: #7ba92c;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap b78;
 }
 
-
+/*
 .logo {
     display: inline;
     z-index: 2;
 }
-
+  */
 ul {
     display: flex;
     align-content: center;
     justify-content: right;
-    max-width: 100%;
-    height: auto;
-    margin: 0;
+    
+
+    margin: 1rem;
     padding: 0;
     list-style-type: none;
+    
     
 }
 
@@ -70,14 +77,15 @@ nav li {
 }
 
 li {
-    display: inline;
+    display: flex;
     border: .2rem solid whitesmoke;
     padding: 1rem;
-    margin: 2rem;
+    margin: .2rem;
     text-align: center;
-    max-width: 10em;
+    
     height: auto;
     background-color: dimgray;
+    flex-grow: 1;
     
 }
 
@@ -150,7 +158,7 @@ li:hover {
         width: 14rem;
         z-index: 2;
         position: relative;
-        left: 600%;
+        left: 550%;
         animation-name: animation-plane;
         transition: transform 1s;
         animation-duration: 7s;
@@ -460,7 +468,7 @@ li:hover {
     margin: 1rem;
 }
 
-
+/*
 .me {
     font-size: 1rem;
     position: relataive;
@@ -471,21 +479,21 @@ li:hover {
     align-items: center;
     text-align: center;
 }
-
+*/
 /*-------Card container for protfolio projects--------*/
 
 .project-container {
-    perspective: 800px;
+    perspective: 50rem;
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 
 }
 
 .project-card {
-    width: 10em;
-    height: 10em;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     transform-style: preserve-3d;
     position: relative;
@@ -520,10 +528,15 @@ li:hover {
 
 .project-block {
     display: flex;
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: auto;
     background-color: green;
 }
 
 
 /* end of card container */
+
+footer {
+    max-width: 100%;
+    background-color: orange;
+}
