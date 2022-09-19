@@ -23,14 +23,10 @@ h1 {
    color: orange;
 }
 
-#line {
-    background-color: #fff;
-    max-width: 100%;
-    min-width: 100%;
-    
-    display: block;
-    position: absolute;
+header{
+    background-color: #141414;
 }
+
 
 .hidden {
     visibility: hidden;
@@ -47,7 +43,7 @@ a {
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #7ba92c;
+    
     width: 100%;
     height: auto;
     flex-wrap: wrap b78;
@@ -63,6 +59,7 @@ ul {
     display: flex;
     align-content: center;
     justify-content: right;
+    align-content: space-between;
     
 
     margin: 1rem;
@@ -254,6 +251,8 @@ li:hover {
         top: 2%;
     }
 }
+
+
 
 /*forehead picture and shadow animation */
 
@@ -539,4 +538,54 @@ li:hover {
 footer {
     max-width: 100%;
     background-color: orange;
+}
+
+.end{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-footer {
+    display: flex;
+    font-size: 22rem;
+    animation: float 5s ease-in-out infinite;
+    
+}
+.icon-image {
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.icon-image-2{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.icon-image-3{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.icon-image-4{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 4s;
+}
+
+.icon-image-5{
+    animation: float 5s ease-in-out infinite;
+    animation-delay: 4.5s;
+}
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-6.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
