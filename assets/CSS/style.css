@@ -154,12 +154,12 @@ li:hover {
     50% {float: center}
     100% {float: left} */
 
-.airplane {
+.mario-cloud {
         width: 14rem;
         z-index: 2;
         position: relative;
         left: 550%;
-        animation-name: animation-plane;
+        animation-name: animation-mariocloud;
         transition: transform 1s;
         animation-duration: 7s;
         animation-delay: .2s;
@@ -169,7 +169,7 @@ li:hover {
     }
 
     
-@keyframes animation-plane {
+@keyframes animation-mariocloud {
     from {right: 200%;}
     to {left: -20%; }
 
