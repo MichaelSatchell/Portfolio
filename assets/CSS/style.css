@@ -1,5 +1,6 @@
 /* color pallet 
 background-color: #4a2c2c;
+background-color: #141414;
 background-color: #1d1e22; 
     color: #141414;
     color: #7ba92c;
@@ -9,9 +10,8 @@ background-color: #1d1e22;
 *{
     margin: 0;
     padding: 0;
-    background-color:  
-    
-   
+    background-color: #1d1e22;
+    font-family: "Asap Condensed";
     
 }
 
@@ -24,6 +24,7 @@ html {
 body {
    /* background-image: radial-gradient(black, red, green); */
    background-color: #1d1e22; 
+  
  
    
 }
@@ -45,7 +46,7 @@ h1, h2 {
 
 header{
     
-    background-color: #141414;
+    
     background-color: #4a2c2c;
 }
 
@@ -69,6 +70,8 @@ nav {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
+    background-color: #4a2c2c;
+    color: #fff;
 }
 
 /*
@@ -110,7 +113,8 @@ ul {
     margin: 1.5rem 0 0 0;
     padding: 0;
     list-style-type: none;
-    
+    background-color: #4a2c2c;
+    color: #fff;
         
 }
 
@@ -129,22 +133,23 @@ li {
     flex-grow: 1;
     justify-content: center;
     justify-items: space-between;
-    
+    background-color: #4a2c2c;
+    color: #fff;
+
 }
 
 
 li:hover {
-    background-color: #7ba92c;
-    border: .5rem solid;
-    border-color: plum;
-    padding: 1rem;
-    background-color: #1d1e22; 
+    /* background-color: #1d1e22; */ 
     color: #1d1e22;
+    color: #fff;
 }
 
 .nav-item-top{
     font-size: 1.5rem;
 }
+
+
 .image-container {
     max-width: 100%;
     height: 100vh;
