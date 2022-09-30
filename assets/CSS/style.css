@@ -1,11 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    background-color: #1d1e22; 
+/* color pallet 
+background-color: #4a2c2c;
+background-color: #1d1e22; 
     color: #141414;
     color: #7ba92c;
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color:  
+    
+   
     
 }
+
 
 html {
     font-size: 16px;
@@ -18,13 +27,26 @@ body {
  
    
 }
-    
-h1 { 
+   /* changed the font sizes and styling per element type */
+p{
+    color:#fff;
+    font-size: 1.5rem;
+}
+h3 {
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+h1, h2 { 
    color: orange;
 }
 
+/* end */
+
 header{
+    
     background-color: #141414;
+    background-color: #4a2c2c;
 }
 
 
@@ -36,17 +58,17 @@ header{
 /* nav-bar */
 
 a {
-    color:#1d1e22; 
-    color: #7ba92c;
+    color:#141414; 
+    /* color: #7ba92c;*/
 }
-
+/* main nav parent flex box to manipulate nav bar */
 nav {
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: center;
+    justify-items: center;
     width: 100%;
     height: auto;
-    flex-wrap: wrap b78;
+    flex-wrap: wrap;
 }
 
 /*
@@ -55,18 +77,41 @@ nav {
     z-index: 2;
 }
   */
+  /* nav to change the styling of the elements */
+
+/* styling for logo */
+li:first-child{
+    background-color: red;
+    margin: 0 30rem 0 0;
+}
+li:nth-child(7){
+    background-color: red;
+    margin: 0 0 0 10rem;
+
+}
+
+li:nth-child(8){
+    margin: 0 2rem 0 0
+
+}
+
+li:nth-child(8):hover {
+    font-size: 4rem;
+    background-color: #141414;
+}
+
+li:nth-child(9){
+    background-color: red;
+
+}
 ul {
     display: flex;
     align-content: center;
-    justify-content: right;
-    align-content: space-between;
-    
-
-    margin: 1rem;
+    margin: 1.5rem 0 0 0;
     padding: 0;
     list-style-type: none;
     
-    
+        
 }
 
 nav li {
@@ -75,23 +120,31 @@ nav li {
 
 li {
     display: flex;
-    border: .2rem solid whitesmoke;
-    padding: 1rem;
-    margin: .2rem;
+    /*border: .2rem solid whitesmoke; */
+    padding: 0;
+    margin: 1rem;
     text-align: center;
-    
     height: auto;
-    background-color: dimgray;
+    max-width: 100%;
     flex-grow: 1;
+    justify-content: center;
+    justify-items: space-between;
     
 }
 
 
 li:hover {
-    background-color: #7ba92c;;
+    background-color: #7ba92c;
+    border: .5rem solid;
     border-color: plum;
+    padding: 1rem;
+    background-color: #1d1e22; 
+    color: #1d1e22;
 }
 
+.nav-item-top{
+    font-size: 1.5rem;
+}
 .image-container {
     max-width: 100%;
     height: 100vh;
@@ -273,7 +326,7 @@ li:hover {
     animation-name: forehead-shadow-animation; 
     transition: transform 1s;
     animation-duration: 5s;
-    animation-delay: 3.5s;
+    animation-delay: 3.37s;
     animation-fill-mode: forwards;
     z-index: 6;
     visibility: hidden; 
@@ -287,7 +340,7 @@ li:hover {
     }
 
     to {
-        top: 9.9%;
+        top: 8.9%;
         visibility: visible;
         opacity: 1;
     }
@@ -316,19 +369,19 @@ li:hover {
     display: block;
     background-color: transparent;
     left: -50%;
-    top: 12%;
+    top: 12.6%;
     z-index: 1;
     overflow: hidden;
-    box-shadow: 0 0 1rem 0;
-    border-radius: 0 50% 50% 50%;
+    box-shadow: 0 0 1rem 0;    
+    border-radius: 50%;
     
 }
 
 
 /*cloud picture and animation */
 .cloud {
-    max-width: 78%;
-    min-width: 78%;
+    max-width: 79%;
+    min-width: 79%;
     height: auto;
     position: relative;
     display: block;
@@ -376,7 +429,7 @@ li:hover {
     z-index: 13;
     overflow: hidden;
     right: -15.6%;
-    top: 23.9%;
+    top: 22.9%;
     
 }
 

@@ -1,3 +1,20 @@
+//top Nav bar gloabl variables from HTML elements
+
+const navBarTop = document.getElementsByClassName('li');
+
+const navBarTopLinks = () => {
+
+}
+
+
+navBarTop.addEventListener('click', clearNames)
+
+resumeLink = () => {
+    document.getElementById('resume-link').href= "https://www.cnn.com/";
+    
+}
+resumeLink.addEventListener('click');
+
 // Global variables from HTML elements
 const randomNameButton = document.getElementById('random-names-button');
 const clearButton = document.getElementById('clear-list');
