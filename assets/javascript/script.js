@@ -1,4 +1,9 @@
-//top Nav bar gloabl variables from HTML elements
+const hideWords = () =>
+    onmouseover
+
+
+
+op Nav bar gloabl variables from HTML elements
 
 const navBarTop = document.getElementsByClassName('li');
 

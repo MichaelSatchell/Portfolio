@@ -29,7 +29,7 @@
             <li class="nav-item-top"><a href="#resume"> Resume</a></li>
             <li class="nav-item-top"> <a href="#projects">Projects</a></li>
             <li class="nav-item-top"><a href="michaelsatcheljr@outlook.com"> Contact</a></li>
-          
+           
             <li class="social-media-icons"><a href =""> <img src="../Portfolio/assets/Images/"> insta</a></li>
             <li class="social-media-icons"><a href =""> <img src="assets/Images/instagram-icon.png"> </a></li>
             <li class="social-media-icons"><a href ="">git hub</a></li>
@@ -39,9 +39,10 @@
   
   <br>
   <br>
+  <br>
+  <br>
 
 
-</div>
   <!--Bootstrap navbar....decided to code my own from scratch.
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -78,12 +79,12 @@
 
   </header>
   
-    <div class="hidden">  </div>
+   
   
 
   <!--container for hero animation-->
-  <div class="image-container">
-
+  <section class="image-container">
+    <div class="imageParent">
     <div>
       <img class="mario-bullet" src="./assets/Images/Mario bullet.svg">
       <!--  <img src="./assets/Images/ufo.svg" alt="ufo image">
@@ -121,9 +122,25 @@
 
       <img class="main-head" src="./assets/Images/head.png" alt="bottom photo of myself">
     </div>
-
-    
   </div>
+    
+  </section>
+<br>
+<br>
+
+<section class="card-container">
+  <div class="project-cards">
+    <div class="p-cards"> <h3 class="hide-words"> card 1 Info </h3></div>
+    <div class="p-cards"> <h3 class="hide-words"> card 2 Info </h3></div>
+    <div class="p-cards"> <h3 class="hide-words"> card 3 information </h3> </div>
+    <div class="p-cards"> <h3 class="hide-words"> card 4 information </h3> </div>
+  </div>
+
+
+</section>
+
+<br>
+<br>
 
   <div class="written">
     <article class="info">
@@ -152,13 +169,13 @@
 
  
 
-  <section class="project-block">
-    <h2> My Projects</h2>
+  
 
  
-
+<br>
+<br>
     <!-- section for portfolio projects and card container-->
-    
+<!--     
     <section class="project-container">
       <article class="project-card">
         <img src="./assets/Images/Naruto Peace Sign.jpg" alt class="card-image">
@@ -167,7 +184,7 @@
         <img src="./assets/Images/naruto young.jpg" alt class="card-image" alt="project 4 card">
       </article>
     </section>
-  </section>
+  </section> -->
 
 
   
@@ -176,25 +193,20 @@
     <h3> TEST Div</h3>
   </div>
 
+<section class="contactForm">
+<div class="foot">
 
-<div >
-  <h1>Random Name Generator</h1>
-  <textarea id="text-box" placeholder="Enter names here"></textarea>
-  <br>
-  <br>
-  <input id="number-of-names" placeholder="Number of random names">
-  <br>
-  <br>
-  <button id="random-names-button">Show Random Names</button>
-  <button id="clear-list">Clear List</button>
-  <br>
+  <form class="footForm">
+      <label for="firstName"> first anme</label>
+      <br>
+      
+      <input type="text" id="firstName" name="firstName">
+      <br>
+      <input type="text" id="eMail" name="eMail">
 
-   <ol id='names-list'class="center">
-          
-  </ol>
-  
-</div>
-  <script src="./script.js"></script>
+  </form>
+</section>
+
   <footer>
 
     <nav class="end">

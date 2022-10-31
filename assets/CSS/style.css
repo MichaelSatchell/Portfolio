@@ -13,6 +13,8 @@ background-color: #1d1e22;
     background-color: #1d1e22;
     font-family: "Asap Condensed";
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
 }
 
 
@@ -41,6 +43,8 @@ h3 {
 h1, h2 { 
    color: orange;
 }
+
+
 
 /* end */
 
@@ -76,13 +80,16 @@ a:active {
 }
 /* main nav parent flex box to manipulate nav bar */
 nav {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    justify-items: center;
+    justify-items: center; */
+    /* display: inline-block; */
+    display: none;
+    position: absolute;
     width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    background-color: #4a2c2c;
+    height: 80vh;
+    background-color: blue;
+    /* background-color: #4a2c2c blue; */
     color: #fff;
 }
 
@@ -126,6 +133,7 @@ li:nth-child(9){
 ul {
     display: flex;
     align-content: center;
+   
     margin: 1.5rem 0 0 0;
     padding: 0;
     list-style-type: none;
@@ -170,9 +178,20 @@ li:hover {
     max-width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex;
+    display: block;
     align-content: center;
+    position: relative;
+    overflow: hidden;
     
+}
+
+.imageParent{
+    display: flex;
+    position: relative;
+    border: 2px red solid;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100vh;
 }
 
 /*-------mario bullet and plane animation--------*/
@@ -380,22 +399,7 @@ li:hover {
     
 }
 
-/*main head */
-.main-head {
-    max-width: 80%;
-    min-width: 80%;
-    height: auto;
-    position: relative;
-    display: block;
-    background-color: transparent;
-    left: 10%;
-    top: 12.6%;
-    z-index: 1;
-    overflow: hidden;
-    box-shadow: 0 0 1rem 0;    
-    border-radius: 50%;
-    
-}
+
 
 
 /*cloud picture and animation */
@@ -436,7 +440,22 @@ li:hover {
     }
 }
 
-
+/*main head */
+.main-head {
+    max-width: 81%;
+    min-width: 81%;
+    height: auto;
+    position: relative;
+    display: block;
+    background-color: transparent;
+    left: 10.9%;
+    top: 12.6%;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 0 1rem 0;    
+    border-radius: 50%;
+    
+}
 
 
 .main-head-shadow {
@@ -460,7 +479,8 @@ li:hover {
     animation-delay: 3s;
     animation-fill-mode: forwards;
     position: relative;
-    visibility: hidden;
+    /* visibility: hidden; */
+    
     
     
 }
@@ -661,4 +681,23 @@ footer {
     100%{
         transform: translateY(0);
     }
+}
+
+.contactForm{
+    background-color: olive;
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    left: 40%;
+    width: 40vw;
+    height: 80vh;
+    border: 2px solid green;
 }
