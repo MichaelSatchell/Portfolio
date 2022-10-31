@@ -15,6 +15,7 @@ background-color: #1d1e22;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+    
 }
 
 
@@ -26,6 +27,7 @@ html {
 body {
    /* background-image: radial-gradient(black, red, green); */
    background-color: #1d1e22; 
+   overflow: hidden;
   
  
    
@@ -84,13 +86,14 @@ nav {
     justify-content: center;
     justify-items: center; */
     /* display: inline-block; */
-    display: none;
+    
     position: absolute;
     width: 100%;
     height: 80vh;
-    background-color: blue;
+    background-color: #1d1e22;
     /* background-color: #4a2c2c blue; */
     color: #fff;
+    overflow: hidden;
 }
 
 /*
@@ -133,12 +136,13 @@ li:nth-child(9){
 ul {
     display: flex;
     align-content: center;
-   
     margin: 1.5rem 0 0 0;
     padding: 0;
     list-style-type: none;
-    background-color: #4a2c2c;
+    background-color: #1d1e22;
     color: #fff;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
         
 }
 
@@ -157,8 +161,9 @@ li {
     flex-grow: 1;
     justify-content: center;
     justify-items: space-between;
-    background-color: #4a2c2c;
+    background-color: transparent;
     color: #fff;
+    overflow: hidden;
 
 }
 
@@ -171,6 +176,7 @@ li:hover {
 
 .nav-item-top{
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 
@@ -182,13 +188,13 @@ li:hover {
     align-content: center;
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .imageParent{
     display: flex;
+    flex-direction: column;
     position: relative;
-    border: 2px red solid;
     overflow: hidden;
     max-width: 100%;
     height: 100vh;
@@ -204,7 +210,6 @@ li:hover {
     z-index: 1;
     transform: rotate(.75turn);
     position: relative;
-    display: block;
     left: 1800%;
     top: 5%;
     margin:0%;
@@ -219,6 +224,7 @@ li:hover {
     animation-duration: 6s;
     animation-delay: 2s;
     visibility: hidden; 
+    overflow: hidden;
 
 }
 
@@ -337,11 +343,12 @@ li:hover {
 
 @keyframes forehead-animation {
     from {
-        top: 38.18%;
+        top: 15.39%;
+        
     }
 
     to {
-        top: 15%;
+        top: 5%;
     }
 }
 
@@ -350,53 +357,57 @@ li:hover {
 /*forehead picture and shadow animation */
 
 .forehead {
-    max-width: 15%;
+    max-width: 11.3%;
     height: auto;
     position: absolute;
     display: block;
-    left: 59.5%;  
-    top: 39.1%;
+    left: 64.1%;  
+    top: 15.39%;
     z-index: 5;
     background-color: transparent;
-   
+    overflow: hidden;
 
 }
 
 .forehead-shadow {
     animation-name: forehead-shadow-animation; 
+    
     transition: transform 1s;
-    animation-duration: 5.2s;
+    animation-duration: 5.3s;
     animation-delay: 3.38s;
     animation-fill-mode: forwards;
     z-index: 6;
     visibility: hidden; 
+    overflow: hidden;
      
 }
 
 @keyframes forehead-shadow-animation {
     from {
-        top: 50.8%;
+        top: 24%;
         opacity: 0;
     }
 
     to {
-        top: 26.8%;
+        top: 14%;
         visibility: visible;
         opacity: 1;
     }
 }
 
 .forehead-shadow{
-    max-width: 15%;
-    min-width: 15%;
+    max-width: 11.42%;
+    min-width: 11.42%;
     height: auto;
     position: absolute;
     display: block;
     background-color: transparent;
     z-index: 9;
-    left: 59.6%;
-    top: 80%;
-    
+    left: 64.1%;  
+    top: 15.39%;
+    /* left: 64%;
+    top: 80%; */
+    overflow: hidden;
 }
 
 
@@ -415,6 +426,7 @@ li:hover {
     overflow: hidden;
     left: 120.2%;
     top: 14.7%;
+    overflow: hidden;
    
 }
 
@@ -427,6 +439,7 @@ li:hover {
     position: relative;
     max-width: 40%;
     visibility: hidden;
+    overflow: hidden;
 }
 
 @keyframes cloud-animation {
@@ -441,51 +454,64 @@ li:hover {
 }
 
 /*main head */
+
+.main-head-div{
+    overflow: hidden;
+}
+
 .main-head {
-    max-width: 81%;
-    min-width: 81%;
+    max-width: 35%;
+    min-width: 35%;
     height: auto;
-    position: relative;
+    position: absolute;
     display: block;
+    background-color: transparent; 
+    top: 10%;
+    right: 10%;
     background-color: transparent;
-    left: 10.9%;
-    top: 12.6%;
     z-index: 1;
     overflow: hidden;
     box-shadow: 0 0 1rem 0;    
     border-radius: 50%;
+    overflow-y: hidden;
     
 }
 
 
 .main-head-shadow {
-    max-width: 79%;
+    /* max-width: 79%;
     min-width: 79%;
     height: auto;
+    position: relative; */
+    max-width: 35%;
+    min-width: 35%;
+    height: auto;
     position: relative;
-    display: flex;
+    display: block;
     background-color: transparent;
     z-index: 13;
     overflow: hidden;
-    right: -15.6%;
-    top: 22.9%;
+    /* right: -15.6%; */
+    left: 80%;
+    top: 30%;
+    border: 100px solid salmon;
     
 }
 
 .main-head-shadow {
-    animation-name: main-head-animation;
+    animation-name: main-head-shadow-animation;
     transition: transform 1s;
     animation-duration: 5s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
     position: relative;
+    
     /* visibility: hidden; */
-    
-    
+    overflow: hidden;
     
 }
 
-@keyframes main-head-animation {
+@keyframes main-head-shadow-animation {
     from {
         opacity: 0%;
     }
@@ -505,7 +531,7 @@ li:hover {
     height: auto;
     overflow: hidden;
     position: relative;
-
+   
 }
 
 .info {
@@ -515,6 +541,7 @@ li:hover {
     animation-fill-mode: forwards;
     position: relative;
     visibility: hidden;
+    width: 40vw;
     
 }
 
@@ -538,6 +565,7 @@ li:hover {
     animation-name: intro-animation;
     font-size: 2rem;
     text-align: left;
+    
     
 }
 
