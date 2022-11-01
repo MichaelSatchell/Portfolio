@@ -13,6 +13,7 @@
     width: 100vw;
     height: 100vh;
     background-color: azure;
+    border: 2px solid yellow;
 }
 
 .project-cards{
@@ -32,6 +33,7 @@
     width: 20vw;
     border: 2px solid orange;
     border-radius: 5px;
+    
 }
 
 .p-cards:hover{

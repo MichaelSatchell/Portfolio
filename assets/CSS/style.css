@@ -2,15 +2,19 @@
 background-color: #4a2c2c;
 background-color: #141414;
 background-color: #1d1e22; 
+main background-color: azure;
+main background-color: #1d1e22;
     color: #141414;
     color: #7ba92c;
+Main font color: #1d1e22;
+Main font color: azure;
 */
 
 
 *{
     margin: 0;
     padding: 0;
-    background-color: #1d1e22;
+    /* background-color: #1d1e22; */
     font-family: "Asap Condensed";
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -26,7 +30,7 @@ html {
 
 body {
    /* background-image: radial-gradient(black, red, green); */
-   background-color: #1d1e22; 
+   /* background-color: #1d1e22;  */
    overflow: hidden;
   
  
@@ -51,9 +55,8 @@ h1, h2 {
 /* end */
 
 header{
-    
-    
-    background-color: #4a2c2c;
+    background-color: azure;
+    width: 100vw;
 }
 
 
@@ -67,13 +70,33 @@ header{
 a {
     /*color:#141414; 
     color: #7ba92c; */
-    color: #fff;
+    /* color: #1d1e22;
     text-decoration: none;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out; */
+    background-image: linear-gradient( to right, orange, black 50%, #000 50% );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease-in-out;
 }
 
+
 a:hover {
-    color:#1d1e22;
+    
+    /* box-shadow: inset 100px 0 0 0 #1d1e22; */
+    border-bottom: 4px solid orange;
+    color: azure;
     text-decoration: none;
+    
+}
+
+a:hover{
+    background-position: 0;
+
+}
+a:hover::before {
+    width: 100%;
 }
 
 a:active {
@@ -82,18 +105,14 @@ a:active {
 }
 /* main nav parent flex box to manipulate nav bar */
 nav {
-    /* display: flex;
-    justify-content: center;
-    justify-items: center; */
-    /* display: inline-block; */
-    
+   
+    display: flex;
     position: absolute;
-    width: 100%;
-    height: 80vh;
-    background-color: #1d1e22;
-    /* background-color: #4a2c2c blue; */
-    color: #fff;
+    width: 100vw;
+    height: auto;
+    color: #1d1e22;
     overflow: hidden;
+    background-color: transparent;
 }
 
 /*
@@ -136,47 +155,49 @@ li:nth-child(9){
 ul {
     display: flex;
     align-content: center;
-    margin: 1.5rem 0 0 0;
     padding: 0;
     list-style-type: none;
-    background-color: #1d1e22;
-    color: #fff;
+    color: #1d1e22;
     overflow: hidden;
     border-bottom: 2px solid #fff;
+    background-color: transparent;
         
 }
 
 nav li {
     font-size: 1rem;
+    color: #1d1e22;
+    background-color: transparent;
+    
 }
 
 li {
     display: flex;
     /*border: .2rem solid whitesmoke; */
     padding: 0;
-    margin: 1rem;
+    margin-left: 2rem;
     text-align: center;
     height: auto;
     max-width: 100%;
-    flex-grow: 1;
-    justify-content: center;
-    justify-items: space-between;
-    background-color: transparent;
-    color: #fff;
+    /* background-color: transparent; */
+    color: #1d1e22;
     overflow: hidden;
+    background-color: transparent;
+    
 
 }
 
 
 li:hover {
     /* background-color: #1d1e22; */ 
-    color: #1d1e22;
+    
     color: #fff;
 }
 
 .nav-item-top{
     font-size: 1.5rem;
     overflow: hidden;
+    color: #1d1e22;
 }
 
 
@@ -188,6 +209,7 @@ li:hover {
     align-content: center;
     position: relative;
     overflow: hidden;
+    
 
 }
 
@@ -198,6 +220,7 @@ li:hover {
     overflow: hidden;
     max-width: 100%;
     height: 100vh;
+    
 }
 
 /*-------mario bullet and plane animation--------*/
@@ -422,11 +445,13 @@ li:hover {
     display: block;
     z-index: 2;
     background-color: transparent;
+    background-color: orange;
     z-index: 5;
+    z-index: 105;
     overflow: hidden;
-    left: 120.2%;
+    right: 20.2%;
     top: 14.7%;
-    overflow: hidden;
+    
    
 }
 
@@ -586,6 +611,7 @@ li:hover {
     display: block;
     top: 48%;
     margin: 1rem;
+    
 }
 
 /*
@@ -656,10 +682,12 @@ li:hover {
 
 /* end of card container */
 
-footer {
-    max-width: 100%;
+/* footer {
+    max-width: 100vw;
+    position: relative;
+    /* top: 100%; */
     background-color: orange;
-}
+} */
 
 .end{
     background-color: red;
@@ -729,3 +757,63 @@ footer {
     height: 80vh;
     border: 2px solid green;
 }
+
+
+
+
+
+/* card styling */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1d1e22;
+    font-family: "Asap Condensed";
+    scroll-snap-type: mandatory;
+    
+}
+.card-container{
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    border: 2px solid yellow;
+}
+
+.project-cards{
+    position: relative;
+    top: 25%;
+    border: 2px solid red;
+    display: flex;
+    gap: 5px;
+    background-color: azure;
+}
+
+.p-cards{
+    position: relative;
+    left: 9%;
+    display: flex;
+    height: 40vh;
+    width: 20vw;
+    border: 2px solid orange;
+    border-radius: 5px;
+    
+}
+
+.p-cards:hover{
+    color: black;
+    border: 4px solid;
+    
+    /* transform: rotate3d(0, 1, 0, 180deg); */
+}
+
+.cc-card{
+    
+    height: 100vh;
+    position: relative;
+}
+ /* FOOTER styling */
+
+
