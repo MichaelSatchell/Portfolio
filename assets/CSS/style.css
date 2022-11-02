@@ -644,10 +644,8 @@ li:hover {
     transform-style: preserve-3d;
     position: relative;
     transition: transform 1.5s cubic-bezier(0.4, 0.03, 0.5, 0.9);
-    border: 4px solid black;
     left: 100px;
     top: 100px;
-
 
 }
 
@@ -676,7 +674,7 @@ li:hover {
     display: flex;
     width: 100%;
     height: auto;
-    background-color: green;
+    
 }
 
 
@@ -690,7 +688,7 @@ li:hover {
 } */
 
 .end{
-    background-color: red;
+    
     display: flex;
     justify-content: center;
 }
@@ -739,15 +737,16 @@ li:hover {
     }
 }
 
+/*...................... contact form .................. */
 .contactForm{
-    background-color: olive;
+    background-color: #1d1e22;
     position: absolute;
     display: block;
     width: 100vw;
     height: 100vh;
 }
 
-.foot{
+.form{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -755,7 +754,9 @@ li:hover {
     left: 40%;
     width: 40vw;
     height: 80vh;
-    border: 2px solid green;
+    color: red;
+    background-color: azure;
+    border: 4px solid green;
 }
 
 
@@ -779,15 +780,14 @@ li:hover {
     width: 100vw;
     height: 100vh;
     background-color: azure;
-    border: 2px solid yellow;
+    
 }
 
 .project-cards{
     position: relative;
     top: 25%;
-    border: 2px solid red;
     display: flex;
-    gap: 5px;
+    gap: 8px;
     background-color: azure;
 }
 
@@ -797,7 +797,6 @@ li:hover {
     display: flex;
     height: 40vh;
     width: 20vw;
-    border: 2px solid orange;
     border-radius: 5px;
     
 }
@@ -814,6 +813,26 @@ li:hover {
     height: 100vh;
     position: relative;
 }
+
+.cardWords{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
  /* FOOTER styling */
 
+ footer {
+    height: 60vh;
+    color: azure;
+ }
 
+ .nav-link{
+    background-color: azure;
+ }
+
+
+/* space div */
+ .space {
+    height: 100vh;
+ }
