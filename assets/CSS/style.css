@@ -19,6 +19,7 @@ Main font color: azure;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+  
     
 }
 
@@ -55,7 +56,7 @@ h1, h2 {
 /* end */
 
 header{
-    background-color: azure;
+    background-color: #fff;
     width: 100vw;
 }
 
@@ -66,7 +67,7 @@ header{
     
 }
 /* nav-bar */
-
+/* ......................link hover animation and color...................... */
 a {
     /*color:#141414; 
     color: #7ba92c; */
@@ -85,25 +86,30 @@ a {
 a:hover {
     
     /* box-shadow: inset 100px 0 0 0 #1d1e22; */
-    border-bottom: 4px solid orange;
-    color: azure;
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
     text-decoration: none;
+    /* border-bottom: 2px solid orange; */
     
 }
 
 a:hover{
     background-position: 0;
+   
 
 }
 a:hover::before {
     width: 100%;
+    
 }
 
 a:active {
-    color: #7ba92c;
+   
     text-decoration: none;
+    
 }
-/* main nav parent flex box to manipulate nav bar */
+/* ...............................main nav parent flex box to manipulate nav bar.................. */
 nav {
    
     display: flex;
@@ -113,6 +119,8 @@ nav {
     color: #1d1e22;
     overflow: hidden;
     background-color: transparent;
+    margin-top: 2rem;
+    
 }
 
 /*
@@ -127,31 +135,34 @@ nav {
 li:first-child{
     /*background-color: red; */
     margin: 0 30rem 0 0;
+    
 }
-li:nth-child(7){
+/* li:nth-child(7){
     background-color: red;
     margin: 0 0 0 10rem;
+    
 
-}
+} */
 
-li:nth-child(8){
+/* li:nth-child(8){
     margin: 0 2rem 0 0;
     background-color: none;
 
-}
+} */
 
-li:nth-child(8):hover {
+/* li:nth-child(8):hover {
     color: #fff;
     /*
     font-size: 4rem;
     background-color: #141414;
     */
-}
+} */
 
 li:nth-child(9){
-    background-color: red;
+    /* background-color: red; */
 
 }
+
 ul {
     display: flex;
     align-content: center;
@@ -161,6 +172,8 @@ ul {
     overflow: hidden;
     border-bottom: 2px solid #fff;
     background-color: transparent;
+    
+    
         
 }
 
@@ -198,6 +211,11 @@ li:hover {
     font-size: 1.5rem;
     overflow: hidden;
     color: #1d1e22;
+    overflow: hidden;
+    position: relative;
+    right: 6rem;
+    z-index: 3;
+    
 }
 
 
@@ -222,6 +240,30 @@ li:hover {
     height: 100vh;
     
 }
+/* ...........................................Logo.............................. */
+
+.my_logo {
+    object-fit: contain;
+    width: 80%;
+    height: 20%;
+    background: none;
+    display: flex;
+    margin-left: 2rem;
+    overflow: hidden;
+    
+   
+}
+
+.logo_line {
+    /* width: 40%; */
+    padding: 0;
+    margin-right: 0;  
+  
+    overflow: hidden;
+
+    
+}
+
 
 /*-------mario bullet and plane animation--------*/
 
@@ -683,7 +725,7 @@ li:hover {
 /* footer {
     max-width: 100vw;
     position: relative;
-    /* top: 100%; */
+     top: 100%; 
     background-color: orange;
 } */
 
@@ -737,33 +779,105 @@ li:hover {
     }
 }
 
-/*...................... contact form .................. */
+/*........................................................ contact form ........................... */
 .contactForm{
     background-color: #1d1e22;
     position: absolute;
-    display: block;
+    display: flex;    
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    
 }
 
-.form{
+.form_1{
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
-    left: 40%;
-    width: 40vw;
-    height: 80vh;
-    color: red;
-    background-color: azure;
-    border: 4px solid green;
+    left: 20%;
+    top: 15%;
+    width: 60%;
+    height: 80%;
+    color: #fff;
+    background-color: #fff;
+    border: 4px solid #fff;
+
+   
+}
+
+.footForm {
+    width: 100%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+input {
+    width: 30%;
+    height: 80%;
+    border: 2px solid white;
+    color: #fff;
+}
+
+textarea {
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    color: #fff;
+}
+
+#submitButton {
+    background-color: #fff;
+    width: 20%;
+    height: 10%;
+    font-size: 1.5rem;
+    color: #1d1e22;
+
+}
+
+#submitButton:hover {
+    background-color: plum;
+}
+
+#formLabel {
+    position: relative;
+    right: 10%;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 20rem;
+    overflow: hidden;
+    background-color: none;
+    
+}
+
+#formTitle {
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    height: auto;
+    overflow: hidden;
+    background-color: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    left: 45%;
+    top: 2rem;
+        
 }
 
 
 
-
-
-/* card styling */
+/* .........................................card styling....................... */
 
 
 *{
@@ -779,7 +893,7 @@ li:hover {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: azure;
+    background-color: #fff;
     
 }
 
@@ -788,7 +902,7 @@ li:hover {
     top: 25%;
     display: flex;
     gap: 8px;
-    background-color: azure;
+    background-color: #fff;
 }
 
 .p-cards{
@@ -820,19 +934,164 @@ li:hover {
     align-items: center;
         
 }
- /* FOOTER styling */
+ /* .........................................FOOTER styling....................... */
 
- footer {
-    height: 60vh;
-    color: azure;
+ 
+
+ .nav-item{
+    background-color: #fff;
  }
 
- .nav-link{
-    background-color: azure;
+ .nav-item:nth-child(1){
+    color: red;
+    background-color: red;
  }
 
+ .col {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #fff;
+    color:#1d1e22
+ }
 
+footer{
+    background-color: #fff;
+    background-color: #1d1e22;
+    height: auto;
+    color: #fff;
+}
 /* space div */
  .space {
     height: 100vh;
  }
+
+
+ .i_icon{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+ }
+
+
+ /*.........................animation for background.....................*/
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/* ...................................End of Animation ................................ */
+
+
+
