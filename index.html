@@ -9,7 +9,7 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/CSS/style.css">
   <!-- <link rel="stylesheet" href="./assets/CSS/card.css"> -->
-  <script src="./assets/javascript/script.js" delay></script>
+  <script src="./assets/javascript/script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Asap+Condensed:wght@400;700&family=Lalezar&family=Monoton&family=Russo+One&family=Silkscreen&display=swap" rel="stylesheet">"
@@ -208,13 +208,18 @@
 <br>
 <br>
 <br> -->
+
+
 <div class="cc-card">
+  
 <section class="card-container">
+  <h1 class="projectHeader">Projects</h1>
+  <hr>
   <div class="project-cards">
-    <div class="p-cards"> <h3 class="cardWords"> card 1 Info </h3></div>
-    <div class="p-cards"> <h3 class="cardWords"> card 2 Info </h3></div>
-    <div class="p-cards"> <h3 class="cardWords"> card 3 information </h3> </div>
-    <div class="p-cards"> <h3 class="cardWords"> card 4 information </h3> </div>
+    <div class="p-cards"> <h3 class="cardWords"><img src="./assets/Images/TaskMasterImageCover.png" target="_blank" class="cardImage">  </h3></div>
+    <div class="p-cards"> <h3 class="cardWords"> <img src="./assets/Images/TaskMasterImageCover.png" target="_blank" class="cardImage"> </h3></div>
+    <div class="p-cards"> <h3 class="cardWords"> <img src="./assets/Images/TaskMasterImageCover.png" target="_blank" class="cardImage"></h3> </div>
+    <div class="p-cards"> <h3 class="cardWords"> <img src="./assets/Images/TaskMasterImageCover.png" target="_blank" class="cardImage"> </h3> </div>
   </div>
 
 </section>
@@ -271,8 +276,11 @@
       
       <textarea id="message" name="message" placeholder="   Message"></textarea>
       <br>
-      <input type="submit" id="submitButton" value="Submit">
+      <input type="submit" onclick="myEmail()" id="submitButton" value="Submit"> </a>
       <br>
+      <input type="reset" value="Reset">
+      <br>
+     
 
   </form>
   
@@ -333,12 +341,12 @@
       <div class="col">
         Copyright &copy; 2022 Michael Satchell Jr. All rights reserved.
       </div>
-      <!-- <div class="mx-5">
+      <div class="mx-5">
         <a href="#"><i class="fa fa-twitter">testhghghghghgg</i></a>
-        <a href="#"><i class="mx-3 fa fa-facebook"></i></a>
+        <a href="#"><i class="mx-3 fa fa-facebook"> <a class="nav-link" href="https://www.instagram.com/satchmo.codes/" target="_blank"><img src="assets/Images/instagram-icon.png" target="_blank"> </i></a>
         <a href="#"><i class="mr-3 fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
-      </div> -->
+      </div>
     </div>
   </footer>
 
