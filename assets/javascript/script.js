@@ -27,4 +27,4 @@
 // };
 
 document.getElementById("pulse").style.color = "red";
-
+document.getElementById("spinScroll").style.color = "red";
