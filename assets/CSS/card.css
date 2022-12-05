@@ -1,12 +1,12 @@
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     background-color: #1d1e22;
     font-family: "Asap Condensed";
     scroll-snap-type: mandatory;
     
-}
+} */
 .card-container{
     position: absolute;
     display: block;
