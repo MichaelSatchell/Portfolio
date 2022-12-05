@@ -136,7 +136,7 @@ a {
   z-index: 5;
 }
 .people2 {
-  visibility: hidden;
+  visibility: hidde;
 animation: 0s linear 9s forwards pulse1;
 }
 
@@ -290,7 +290,7 @@ animation: 0s linear 9s forwards pulse1;
 
   .scroll {
    
-    visibility: hidden;
+    visibility: hidde;
     animation: 0s linear 9s forwards pulse1;
   }
   
@@ -307,11 +307,12 @@ animation: 0s linear 9s forwards pulse1;
 .scroll {
   position: relative;
   top: 125%;
-  left: 100%;
+  left: 98%;
   justify-content: center;
   justify-items: center;
   align-items: center;
   display: flex;
+  
 }
 
 
@@ -410,7 +411,7 @@ animation: 0s linear 9s forwards pulse1;
   .text-container p:nth-of-type(1) {
     font-size: 0.86rem;
   }
-}
+
 
 
 
