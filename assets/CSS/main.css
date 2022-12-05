@@ -18,12 +18,7 @@
   } */
 
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-/* @media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  } */
+
 
   /* .........................NEW PARRALX INFO......................... */
 
@@ -39,6 +34,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 html,
@@ -49,6 +45,7 @@ body {
   background-color: #000;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 700;
+ 
  
 }
 
@@ -71,6 +68,7 @@ a {
 
 .wrapper {
   height: 100vh;
+  
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
@@ -92,14 +90,14 @@ a {
 }
 /* .............main picture for parallax......... */
 
-video {
+/* video {
     width: 100%;
     height: 100vh;
     
-}
+} */
 
 .sky {
-  /* background: url('/Portfolio/assets/Images/background.png') no-repeat center; */
+  background: url('') no-repeat center; 
   
   background-size: cover;
   transform: translateZ(-600px) scale(3);
@@ -107,7 +105,8 @@ video {
 }
 
 .bushes {
-  background: url('/assets/Images/') no-repeat center;
+  /* background: url('/assets/Images/background.png') no-repeat center; */
+  
   background-size: cover;
   transform: translateZ(-525px) scale(2.75);
   z-index: 2;
@@ -115,28 +114,44 @@ video {
 }
 
 .water {
-  background: url('/assets/Images/background.png') no-repeat center;
+  /* background: url('/assets/Images/background.png') no-repeat center; */
+  
   background-size: cover;
   transform: translateZ(-400px) scale(2.33333333);
   z-index: 3;
+
 }
 
 .people1 {
-  background: url('../img/people1.png') no-repeat center;
+  background: url('') no-repeat center;
   background-size: cover;
   transform: translateZ(-250px) scale(1.833333333);
   z-index: 4;
 }
 
 .people2 {
-  background: url('../img/people2.png') no-repeat center;
+  background: url('/assets/Images/Yoda\ 2.png') no-repeat center;
   background-size: cover;
   transform: translateZ(-125px) scale(1.4167);
   z-index: 5;
 }
+.people2 {
+  visibility: hidden;
+animation: 0s linear 9s forwards pulse1;
+}
+
+@keyframes pulse1 {
+
+ 
+
+  100% {
+    visibility: visible;
+  }
+}
+
 
 .people3 {
-  background: url('../img/people3.png') no-repeat center;
+  background: url('') no-repeat center;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;
@@ -186,6 +201,7 @@ video {
   transform: translate(-50%, -50%);
   width: 30rem;
   height: 25rem;
+ 
   
 }
 
@@ -199,112 +215,109 @@ video {
   
 
 }
-
+/* ...artist landing title..... */
 .year-container h1:nth-of-type(1) {
-  bottom: 70%;
-  right: -147%;
+  top: -60%;
+  right: -20%;
   
 }
 
 
 .year-container h1:nth-of-type(1) {
-  animation-name: flyInDeveloper;
-  animation-duration: 14s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  
+  visibility: hidden;
+  animation: 0s linear 9s forwards pulse1;
 }
 
-@keyframes flyInDeveloper {
-    0% { 
-        transform: translateX(400%);
-    }
+@keyframes pulse1 {
+  
+   
+
     100% {
-        transform: translate(0%);
+      visibility: visible;
     }
 }
 
 
 
+/* ...designer landing title..... */
 .year-container h1:nth-of-type(2) {
-  right: -79%;
-  bottom: 20%;
+  right: -88%;
+  top: -20%;
 }
 
 
 .year-container h1:nth-of-type(2) {
-    animation-name: flyInDesigner;
-    animation-duration: 14s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    
-  }
+  visibility: hidden;
+  animation: 0s linear 9s forwards pulse1;
+}
+
+@keyframes pulse1 {
   
-  @keyframes flyInDesigner {
-    
-      0% { 
-          transform: translateX(-400%);
-          opacity: 0;
-         
-      }
-      100% {
-          transform: translate(0%);
-          visibility: visible;
-          
-          
-      }
-  }
+   
 
-
-.year-container h1:nth-of-type(3) {
-  top: -7%;
-  right: 20%;
+    100% {
+      visibility: visible;
+    }
 }
 
 
+/* ...developer landing title .... */
 .year-container h1:nth-of-type(3) {
-    animation-name: flyInArtist;
-    animation-duration: 16s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    
-  }
-  
-  @keyframes flyInArtist {
-    
-      0% { 
-          transform: translateX(560%);
-          opacity: 0;
-         
-      }
-      100% {
-          transform: translate(-0%);
-          visibility: visible;
-          
-          
-      }
-  }
-
-
-
-
-
-
-
-.year-container h1:nth-of-type(4) {
-  left: 80%;
   top: 20%;
-  border: 4px solid maroon;
-  
+  right: -125%;
 }
 
-/* a:hover {
-    
-    color: palevioletred;
-    
-    
 
-} */
+.year-container h1:nth-of-type(3) {
+  visibility: hidden;
+    animation: 0s linear 9s forwards pulse1;
+  }
+  
+  @keyframes pulse1 {
+    
+     
+
+      100% {
+        visibility: visible;
+      }
+  }
+
+
+
+
+/* ....................scroll CTA.............. */
+
+
+  .scroll {
+   
+    visibility: hidden;
+    animation: 0s linear 9s forwards pulse1;
+  }
+  
+  @keyframes pulse1 {
+    
+     
+
+      100% {
+        visibility: visible;
+      }
+  }
+
+
+.scroll {
+  position: relative;
+  top: 125%;
+  left: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+/* .............................TITLES on Landing Page.............. */
 
 @media (-webkit-min-device-pixel-ratio:0) {
     .devTitle:hover {
@@ -316,6 +329,7 @@ video {
       -webkit-transition: 2s .2s;
       -webkit-background-clip: text;
     }
+
     .devTitle:hover {
       background-position: 0 0;
       color: transparent;
@@ -372,10 +386,7 @@ video {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 760px) {
-  .hero-text ul li {
-    visibility: visible;
-  }
+
 
   .info-container {
     display: grid;
@@ -401,17 +412,7 @@ video {
   }
 }
 
-@media (min-width: 1126px) {
-  .sky,
-  .bushes,
-  .water,
-  .people1,
-  .people2,
-  .people3,
-  .hero-text {
-    background-size: contain;
-  }
-}
+
 
 .picContainer {
     position: relative;
@@ -434,10 +435,10 @@ video {
 /* 
 .................parallax images..................... */
 .inner-parallax {
-  border: 2px solid red;
   width: 50%;
   height: auto;
-  background-color: greenyellow;
+  
+  
 }
 .water-gun {
  width: 80%;

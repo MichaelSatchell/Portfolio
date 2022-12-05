@@ -1,8 +1,8 @@
 
-document.getElementById('submitButton').onclick = function() {myEmail()};
-const myEmail = () => {
-    document.getElementById('submitButton').innerHTML = "You Clicked Me";
-}
+// document.getElementById('submitButton').onclick = function() {myEmail()};
+// const myEmail = () => {
+//     document.getElementById('submitButton').innerHTML = "You Clicked Me";
+// }
 
 
 
@@ -13,15 +13,18 @@ const myEmail = () => {
 // }
 
 
-sendEmail = () +> {
-    const mail = 'michaelsatchelljr@outlook.com'
-}
+// sendEmail = () +> {
+//     const mail = 'michaelsatchelljr@outlook.com'
+// }
 
 
-inputNeeded = () +> {
-    const empty = document.getElementById('firstName');
-    if(empty == null){
-        alert("Please fill in all input fields");
-    }
+// inputNeeded = () +> {
+//     const empty = document.getElementById('firstName');
+//     if(empty == null){
+//         alert("Please fill in all input fields");
+//     }
     
-}
+// };
+
+document.getElementById("pulse").style.color = "red";
+
