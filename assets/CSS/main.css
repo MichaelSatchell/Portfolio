@@ -404,6 +404,7 @@ animation: 0s linear 9s forwards pulse1;
       background-position: 100% 0;
       background-size: 200% 200%;
       color: transparent;
+      text-decoration: none;
       -webkit-transition: 2s .2s;
       -webkit-background-clip: text;
     }
@@ -429,6 +430,7 @@ animation: 0s linear 9s forwards pulse1;
 .social-container i {
   font-size: 1.25rem;
   margin-right: 0.25rem;
+  
 }
 
 .info-container {
